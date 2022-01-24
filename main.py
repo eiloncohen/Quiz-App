@@ -11,12 +11,10 @@ for question in question_data:
     question_bank.append(new_question)
 
 quiz = QuizBrain(question_bank)
-
-ui = UI()
+ui = UI(quiz)
 
 while quiz.still_has_questions():
    q_and_a = quiz.next_question()
-   ui.enter_question_to_canvas(q_and_a)
 
 print("You've completed the quiz")
 print(f"Your final score was: {quiz.score}/{quiz.question_number}")
