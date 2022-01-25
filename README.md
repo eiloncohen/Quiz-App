@@ -1,6 +1,7 @@
 # Quiz-App
 Quiz app game 
 
+The questions are imported randomly on random topics through the API of the site https://opentdb.com/
 
 
 # images 
